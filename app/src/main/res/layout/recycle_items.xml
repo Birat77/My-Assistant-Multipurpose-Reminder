@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#022301"
+    android:layout_height="86dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recycle_title"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/abc_primary_text_material_dark"
+            tools:text="Title"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recycle_date_time"
+            android:layout_width="match_parent"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="@color/abc_secondary_text_material_dark"
+            tools:text="Date and Time"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recycle_repeat_info"
+            android:layout_width="match_parent"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="@color/abc_secondary_text_material_dark"
+            tools:text="Repeat No and Type"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

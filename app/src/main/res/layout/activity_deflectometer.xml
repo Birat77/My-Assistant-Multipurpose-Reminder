@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_deflectometer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kuce15.myassistant.Deflectometer">
+    <TextView
+        android:text="@string/Ask_marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="18dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/marksquest"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Marks here."
+        android:id="@+id/marksinput"
+        android:inputType="number"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/marksquest"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:text="Check for Deflection"
+        android:backgroundTint="@color/Colorshadeofblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marksinput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/button"
+        android:onClick="calculatedeflectionthreshold"/>
+    <TextView
+        android:text="Required marks to avoid Deflection:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"
+        android:textColor="@color/defl"
+        android:id="@+id/UpdateResult"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:text="Max grade if deflection occurs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UpdateResult"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/defl"
+        android:layout_marginTop="30dp"
+        android:id="@+id/updatemaxgrade"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:text="Internal full marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/marksinput"
+        android:layout_alignEnd="@+id/button2" />
+
+    <TextView
+        android:text="CHOOSE"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/marksquest"
+        android:onClick="chooseinternalfullmarks"
+        android:id="@+id/textView6" />
+
+    <Button
+        android:text="Save the marks as screenshot and share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Colorshadeofblue"
+        android:onClick="createpdffile"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Minimum marks to pass:"
+
+        android:textColor="@color/defl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatemaxgrade"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Marks required to get an A:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+
+        android:textColor="@color/defl"
+        android:id="@+id/textView9"
+        android:layout_alignEnd="@+id/button2" />
+
+    <TextView
+        android:text="Marks required to get A-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/defl"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView12"
+        android:layout_alignEnd="@+id/textView9" />
+
+    <TextView
+        android:text="Marks required to get B+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true"
+
+        android:textColor="@color/defl"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView13"
+        android:layout_alignEnd="@+id/textView12" />
+
+    <TextView
+        android:text="Marks required to get B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+
+        android:textColor="@color/defl"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView15"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Marks required to get B-"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:textColor="@color/defl"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView16"
+        android:layout_alignEnd="@+id/textView13" />
+
+
+
+</RelativeLayout>

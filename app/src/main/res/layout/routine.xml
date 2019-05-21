@@ -1,0 +1,63 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#022301"
+    android:layout_height="86dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/recycle_name"
+            android:layout_width="80dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/abc_primary_text_material_dark"
+            tools:text="Name"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/recycle_roll_no"
+            android:layout_width="80dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/abc_primary_text_material_dark"
+            tools:text="RollNo"
+            android:textSize="15dp"/>
+
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/recycle_department"
+            android:layout_width="100dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/abc_primary_text_material_dark"
+            tools:text="department"/>
+        <TextView
+            android:layout_marginRight="20dp"
+            android:id="@+id/recycle_gpa"
+            android:layout_width="80dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/abc_primary_text_material_dark"
+            tools:text="GPA"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

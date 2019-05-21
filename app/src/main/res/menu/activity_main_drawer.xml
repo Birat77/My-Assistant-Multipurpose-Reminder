@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+
+            android:title="Menu" />
+        <item
+            android:id="@+id/nav_task"
+            android:title="Task" />
+        <item
+            android:id="@+id/nav_routine"
+            android:title="Routine" />
+        <item
+            android:id="@+id/nav_GPA_Calculator"
+
+            android:title="GPA Calculator" />
+        <item
+            android:id="@+id/Deflection"
+
+            android:title="Deflectometer" />
+        <item
+            android:id="@+id/Credits"
+            android:title="About us"/>
+    </group>
+
+
+
+
+</menu>

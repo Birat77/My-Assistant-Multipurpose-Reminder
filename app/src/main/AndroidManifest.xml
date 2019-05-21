@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kuce15.myassistant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.alarm.permissions.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddTaskActivity"
+            android:exported="true"
+            android:label="AddTask"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kuce15.myassistant.AddTaskActivity" />
+        </activity>
+
+        <provider
+            android:name=".TasksProvider"
+            android:authorities="com.example.pratik.locationr.tasksprovider"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAJmweJsHeggSFZytrkguIgR4PtY5Cgtas" />
+
+        <activity
+            android:name=".NotificationActivity"
+            android:label="Notification">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <receiver android:name=".Task.AlarmReceiver" />
+        <receiver android:name=".Task.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Deflectometer" />
+        <activity android:name=".GPA.EightRows" />
+        <activity android:name=".GPA.SevenRows" />
+        <activity android:name=".GPA.SixRows" />
+        <activity android:name=".GPA.FiveRows" />
+        <activity android:name=".GPA.GPACalculation" />
+        <activity android:name=".GPA.StudentRecords" />
+        <activity android:name=".routine_tabbed" />
+        <activity android:name=".SUNDAY.sundayadd" />
+        <activity android:name=".MONDAY.MondayAdd" />
+        <activity android:name=".TUESDAY.TuesdayAdd" />
+        <activity android:name=".WEDNESDAY.WednesdayAdd" />
+        <activity android:name=".THURSDAY.ThursdayAdd" />
+        <activity android:name=".FRIDAY.FridayAdd" />
+        <activity android:name=".Task.TaskAcitivity" />
+        <activity android:name=".Task.ReminderAddActivity" />
+        <activity android:name=".Task.ReminderEditActivity" />
+        <activity android:name=".CreditsActivity" />
+        <activity android:name=".ANYDAY.SundayADD"></activity>
+    </application>
+
+</manifest>

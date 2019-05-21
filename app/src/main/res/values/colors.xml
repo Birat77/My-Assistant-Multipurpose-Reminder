@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="toolbar_title">#ffffff</color>
+    <color name="primary">#0A6207</color>
+    <color name="primary_dark">#263238</color>
+    <color name="accent">#78909c</color>
+    <color name="control_normal">#888888</color>
+    <color name="fab_pressed">#546e7a</color>
+    <color name="colorPrimary">#4df740</color>
+    <color name="colorPrimaryDark">#d7e3f1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Buttonbl">#cbcb14</color>
+    <color name="defl">#e75811</color>
+
+
+
+    <color name="Colorshadeofblue"> #1a68c0 </color>
+</resources>

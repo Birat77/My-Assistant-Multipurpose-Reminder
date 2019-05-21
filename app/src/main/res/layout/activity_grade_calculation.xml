@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_grade_calculation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="?attr/colorPrimary" />
+    <LinearLayout
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+
+
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="A" />
+            <TextView
+
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:text="  4.0" />
+            <TextView
+
+                android:textColor="@color/abc_primary_text_material_dark"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text="Outstanding" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            
+
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="A-" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115dp"
+                    android:text=" 3.7" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="Excellent" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+
+            android:id="@+id/date"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="B+" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115dp"
+                    android:text="3.3" />
+                <TextView
+                    android:id="@+id/date_text"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    android:text="V.Good" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="B" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115dp"
+                    android:text="   3.0" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    android:text="Good" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="B-" />
+                <TextView
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115dp"
+                    android:text="  2.7" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    android:text="Fair" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="C+" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115dp"
+                    android:text=" 2.3" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    android:text="Fair"
+                    android:layout_weight="0.04" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text=" C" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:text="     2.0" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="104dp"
+                    android:text="Poor" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="C-" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="112dp"
+                    android:text="   1.7" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    android:text="Poor" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="D" />
+                <TextView
+
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="115dp"
+                    android:text="    1.0" />
+                <TextView
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text=" Poor" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="F" />
+                <TextView
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="112dp"
+                    android:text="     0.0" />
+                <TextView
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="104dp"
+                    android:text="Fail" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:text="5"
+        android:minHeight="0dp"
+        android:minWidth="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/NumberOfCourse"
+        android:text="    Select the no.of Course"
+        android:textSize="17dp"
+        android:layout_above="@+id/button5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Letter Grading System"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:textSize="20dp"
+        android:textColor="@color/wallet_hint_foreground_holo_light"
+        android:id="@+id/textView4" />
+
+    <Button
+        android:text="STUDENT RECORDS"
+        android:minHeight="0dp"
+        android:minWidth="60dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/records"
+        android:layout_above="@+id/NumberOfCourse"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="6"
+        android:minHeight="0dp"
+        android:minWidth="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:layout_below="@+id/NumberOfCourse"
+        android:layout_alignStart="@+id/NumberOfCourse" />
+
+
+    <Button
+        android:text="7"
+        android:minHeight="0dp"
+        android:minWidth="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:layout_below="@+id/NumberOfCourse"
+        android:layout_alignEnd="@+id/records" />
+
+    <Button
+        android:text="8"
+        android:minHeight="0dp"
+        android:minWidth="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8"
+        android:layout_below="@+id/NumberOfCourse"
+        android:layout_toEndOf="@+id/NumberOfCourse" />
+
+
+</RelativeLayout>
